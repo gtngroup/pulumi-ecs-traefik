@@ -416,14 +416,16 @@ func createContainerDefs(ctx *pulumi.Context, loadBalancer *elb.LoadBalancer, cl
 				{
 					"name": "AWS_ACCESS_KEY_ID",
 					"value": %q
-				},
+				}
+			],
+			"Secrets": [
 				{
 					"name": "AWS_SECRET_ACCESS_KEY",
-					"value": %q
+					"valuefrom": %q
 				}
 			]
 		}]`
-		def := fmt.Sprintf(fmtstr, name, os.Getenv("AWS_ACCESS_KEY_ID"), os.Getenv("AWS_SECRET_ACCESS_KEY"))
+		def := fmt.Sprintf(fmtstr, name, os.Getenv("AWS_ACCESS_KEY_ID"), os.Getenv("AWS_SECRET_ACCESS_KEY_ARN"))
 		return def, nil
 	}).(pulumi.StringOutput)
 
