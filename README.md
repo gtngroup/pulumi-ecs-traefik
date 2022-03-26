@@ -1,8 +1,7 @@
-[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/truesch/pulumi_examples/blob/master/aws-go-fargate/README.md)
+This example is based on [this example from pulumi](https://github.com/pulumi/examples/tree/master/aws-go-fargate). The README below is from this original Repo.
+
 
 # Traefik on AWS ECS Fargate using Pulumi IaC
-
-This example is based on [this example from pulumi](https://github.com/pulumi/examples/tree/master/aws-go-fargate).
 
 This example shows authoring Infrastructure as Code in the [Go programming language](https://golang.org). It
 provisions a full [Amazon Elastic Container Service (ECS) "Fargate"](https://aws.amazon.com/ecs) cluster and
