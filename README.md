@@ -1,7 +1,12 @@
-This example is based on [this example from pulumi](https://github.com/pulumi/examples/tree/master/aws-go-fargate). The README below is from this original Repo.
-
-
 # Traefik on AWS ECS Fargate using Pulumi IaC
+
+This example is based on [this example from pulumi](https://github.com/pulumi/examples/tree/master/aws-go-fargate). 
+In this template we create and deploy a simple web proxy + backend service setup. We use [traefik](https://traefik.io/traefik/) as our 
+application proxy of choice. The architecture looks something like this:
+
+![deployment](Deployment.png)
+
+# AWS ECS Fargate using Pulumi IaC
 
 This example shows authoring Infrastructure as Code in the [Go programming language](https://golang.org). It
 provisions a full [Amazon Elastic Container Service (ECS) "Fargate"](https://aws.amazon.com/ecs) cluster and
